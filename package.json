@@ -1,0 +1,48 @@
+{
+  "name": "tabenterleaderboard",
+  "displayName": "TabEnterLeaderBoard",
+  "description": "Counts the number of characters by you and by copilot and shows you who writes more. Also counts the streak how long you were able to hit tab enter and the code made sense.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:tabenterleaderboard.startRecording"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tabenterleaderboard.startRecording",
+        "title": "Start recording `Tab`+`Enter` count"
+      },
+      {
+        "command": "tabenterleaderboard.stopRecording",
+        "title": "Stop recording - `Tab`+`Enter`"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "test": "echo 0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  }
+}
