@@ -4,7 +4,7 @@ Do you `Tab`+`Enter` all the time? Github Copilot might have changed your life. 
 
 ## Features
 
-![feature X](images/HumanVsCopilot.gif)
+![feature X](https://github.com/theluk/vscode-tabenter/blob/main/images/HumanVsCopilot.gif?raw=true)
 
 ### Track your `Tab`+`Enter` count
 
